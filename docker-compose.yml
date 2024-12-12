@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: .
+    container_name: gpt-reviews-container
+    environment:
+      - PROXY_API_KEY=
+    volumes:
+      - .:/app
